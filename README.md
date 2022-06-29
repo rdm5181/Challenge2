@@ -31,3 +31,6 @@ In this section, list all the people who contribute to this project. You might w
 ## License
 
 When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+
+## Updates
+v.1: 6/29/2022 First draft of save function and save qualifying loan implemented.
