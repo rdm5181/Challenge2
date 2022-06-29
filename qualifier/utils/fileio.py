@@ -37,7 +37,7 @@ def save_csv(qualifying_loans, csvpath):
         qualifying_loans: A list of loan data.
     
     Returns: 
-        None.  Just saves a file.
+        Saves file.
         
     """
     with open(csvpath, "w") as csvfile:
