@@ -44,3 +44,4 @@ Business Operations (BizOps)
 ## Updates
 v.1: 6/29/2022 First draft of save function and save qualifying loan implemented.
 v.2: 6/29/2022 Updated Readme file and dialog for save qualifying loan.
+v.3: 6/29/2022 Successfully writes loan list

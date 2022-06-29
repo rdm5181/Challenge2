@@ -40,7 +40,7 @@ def save_csv(qualifying_loans, csvpath):
         Saves file.
         
     """
-    with open(csvpath, "w") as csvfile:
-        writer = csv.writer(csvfile, delimiter=",")
-        writer.writerow(['Bank Data','Credit Score','Debt','Income','Loan Amount','Home Value'])  #Header
-        writer.writerow(qualifying_loans)
+    with open(csvpath, "w", newline="") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Lender','Max Loan','Max Loan to Value','Max Debt to Income','Min Credit Score','Interest Rate'])  #Header
+        writer.writerows(qualifying_loans)

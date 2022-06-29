@@ -7,6 +7,7 @@ Example:
     $ python app.py
 """
 import sys
+print(sys.version)
 import fire
 import questionary
 from pathlib import Path
@@ -112,7 +113,7 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     csvpath = questionary.text("Enter a file path to save loans (.csv):").ask()
-    response = questionary.text.confirm("Is this correct?").ask()
+    response = questionary.confirm("Is this correct?").ask()
     if response:
         csvpath = Path(csvpath)
     else:
