@@ -26,7 +26,14 @@ python
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+The program asks a path for the rate sheet followed by five questions:
+  What's your credit score?
+  What's your current amount of monthly debt?
+  What's your total monthly income?
+  What's your desired loan amount?
+  What's your home value?
+Financial ratios are calculated and the number of qualifying loans are given.
+The user may save the information to a file of their choice.
 
 ---
 
@@ -45,3 +52,4 @@ Business Operations (BizOps)
 v.1: 6/29/2022 First draft of save function and save qualifying loan implemented.
 v.2: 6/29/2022 Updated Readme file and dialog for save qualifying loan.
 v.3: 6/29/2022 Successfully writes loan list
+v.4: 6/30/2022 Business Requirements successfully translated into code.

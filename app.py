@@ -100,7 +100,8 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     bank_data_filtered = filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
 
     print(f"Found {len(bank_data_filtered)} qualifying loans")
-
+    if len(bank_data_filtered)==0:
+        sys.exit(f"Please try again later.")
     return bank_data_filtered
 
 
@@ -112,9 +113,9 @@ def save_qualifying_loans(qualifying_loans):
         csvpath (Path): Path of csv file to be written to.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    csvpath = questionary.text("Enter a file path to save loans (.csv):").ask()
-    response = questionary.confirm("Is this correct?").ask()
+    response = questionary.confirm("Would you like to save the file?").ask()
     if response:
+        csvpath = questionary.text("Enter a file path to save loans (.csv):").ask()
         csvpath = Path(csvpath)
     else:
         sys.exit(f"File not saved.")
